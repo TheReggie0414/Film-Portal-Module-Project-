@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    font-family: 'Lato', sans-serif;
+    padding: 20px 20px;
+}
+
+header a {
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    transform: scale(1.1);
+}
+
+.active {
+    box-shadow: 0 0 10px rgba(28, 9, 50, 1);
+    background-color: #1C0932;
+}

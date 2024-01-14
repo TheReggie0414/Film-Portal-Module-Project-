@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.main-block-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.40);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.movie-details-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.movie-block-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.movie-block-film-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.movie-block-film-info h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.movie-poster {
+    width: 20%;
+    margin: 20px 20px;
+}
+
+.movie-info {
+    margin-bottom: 20px;
+    color: #a3a3a3;
+    width: 80%;
+}
+
+.rating {
+    margin-top: 20px;
+    color: rgb(160, 17, 17);
+    font-weight: 700;
+}
+
+.cast-container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.h3-cast {
+    font-size: 20px;
+    color: #a3a3a3;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cast-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.actor-card {
+    text-align: center;
+}
+
+.actor-image {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+.actor-image:hover {
+    transform: scale(1.4);
+}
+
+.actor-name {
+    color: white;
+}
+
+.images-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.images-container h3 {
+    font-size: 20px;
+    color: #a3a3a3;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.images-list img {
+    max-width: 400px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.images-list img:hover {
+    transform: scale(1.4);
+}
+
+.trailers-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.trailers-container h3 {
+    font-size: 20px;
+    color: #a3a3a3;
+    font-weight: 700;
+}
+
+.trailers-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
