@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { HomePage } from '../../pages/HomePage/Homepage'
-import { News } from '../../pages/Newspage/Newspage';
+import { Famousactors } from '../../pages/Famousactors/Famousactors';
 import { TopFilms } from '../../pages/TopFilms/TopFilms';
 import { Layout } from '../../components/Layout';
 import { Napoleon } from '../../pages/PagesFilms/Napoleon';
@@ -21,7 +21,7 @@ const Header = () => {
         <Routes>
             <Route path='/' element={<Layout />}>
                 <Route index element={<HomePage />}></Route>
-                <Route path='News' element={<News />}></Route>
+                <Route path='Famousactors' element={<Famousactors />}></Route>
                 <Route path='topFilms' element={<TopFilms />}></Route>
                 <Route path='Napoleon' element={<Napoleon />}></Route>
                 <Route path='Wish' element={<Wish />}></Route>

@@ -5,8 +5,8 @@ const Layout = () => {
         <>
             <header>
                 <NavLink to='/'>Головна</NavLink>
-                <NavLink to='/News'>Новини</NavLink>
-                <NavLink to='/TopFilms'>Топ Фiльмiв</NavLink>
+                <NavLink to='/Famousactors'>Вiдомi актори</NavLink>
+                <NavLink to='/TopFilms'>Вiдомi фiльми</NavLink>
             </header>
 
             <Outlet />
