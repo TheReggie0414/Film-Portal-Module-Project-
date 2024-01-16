@@ -1,6 +1,6 @@
 # Movie Portal App
 
-![Movie Database](![image](https://github.com/cos1715/JS15-React/assets/109174554/891c9fa1-f878-4b81-b7f1-7dae7b8172c7)
+(![image](https://github.com/cos1715/JS15-React/assets/109174554/891c9fa1-f878-4b81-b7f1-7dae7b8172c7)
 
 ## Overview
 
@@ -15,7 +15,7 @@ The Movie Portal App crafted as a part of a Front-End Development course, this p
 
 ## Project Showcase
 
-- [Live Demo]([https://your-live-demo-link.com](https://film-portal-module-project.vercel.app))
+- [Live Demo] ([https://your-live-demo-link.com](https://film-portal-module-project.vercel.app))
 
 ## Technologies Used
 
