@@ -13,7 +13,7 @@ const TopFilms = () => {
                 const data = await response.json();
                 setMovies(data.results);
             } catch (error) {
-                console.error('Ошибка при получении топовых фильмов:', error);
+                console.error('Error fetching top-rated movies:', error);
             }
         };
 

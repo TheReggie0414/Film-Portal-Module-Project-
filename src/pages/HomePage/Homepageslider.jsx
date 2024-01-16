@@ -31,12 +31,12 @@ const HomePageslider = () => {
                     alt="Slideshow Image"
                 />
                 <div className='first-title'>
-                    <h1>Трейлери та рецензії</h1>
+                    <h1>Trailers and Reviews</h1>
                 </div>
                 <div className='second-title'>
                     <h2>
-                        Миттєвий пошук фільмів і зручний серфінг по базі даних.
-                        Ви завжди будете у курсі, що і коли дивитися.
+                        Instantly search for movies and conveniently browse the database.
+                        You will always be informed about what and when to watch.
                     </h2>
                 </div>
             </div>

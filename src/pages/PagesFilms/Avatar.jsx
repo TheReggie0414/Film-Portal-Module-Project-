@@ -30,7 +30,7 @@ const Avatar = () => {
             const trailersData = await trailersResponse.json();
             setTrailers(trailersData.results.filter((video) => video.type === 'Trailer'));
         } catch (error) {
-            console.error('Ошибка при получении информации о фильме:', error);
+            console.error('Error fetching movie information:', error);
         }
     };
 
@@ -50,7 +50,7 @@ const Avatar = () => {
                             <h1>{movie.title}</h1>
                             <div className="movie-info">
                                 <p>{movie.overview}</p>
-                                <p className='rating'>Рейтинг: {movie.vote_average}</p>
+                                <p className='rating'>Rating: {movie.vote_average}</p>
                             </div>
 
                             <h3 className='h3-cast'>The cast:</h3>
@@ -79,7 +79,7 @@ const Avatar = () => {
                     </div>
 
                     <div className="trailers-container">
-                        <h3>Трейлеры:</h3>
+                        <h3>Trailers:</h3>
                         <div className="trailers-list">
                             {trailers.map((trailer) => (
                                 <iframe key={trailer.id} title="Trailer" width="560" height="315" src={`https://www.youtube.com/embed/${trailer.key}`} frameBorder="0" allowFullScreen></iframe>

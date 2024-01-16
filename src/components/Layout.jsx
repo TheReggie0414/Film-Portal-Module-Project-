@@ -4,9 +4,9 @@ const Layout = () => {
     return (
         <>
             <header>
-                <NavLink to='/'>Головна</NavLink>
-                <NavLink to='/Famousactors'>Вiдомi актори</NavLink>
-                <NavLink to='/TopFilms'>Вiдомi фiльми</NavLink>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/Famousactors'>Famous Actors</NavLink>
+                <NavLink to='/TopFilms'>Top Films</NavLink>
             </header>
 
             <Outlet />
@@ -14,4 +14,4 @@ const Layout = () => {
     )
 }
 
-export { Layout }
+export { Layout };

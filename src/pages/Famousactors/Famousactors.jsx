@@ -15,11 +15,11 @@ const Famousactors = () => {
                 if (data.results && Array.isArray(data.results)) {
                     setActors(data.results);
                 } else {
-                    setError('Некоректні дані від API');
+                    setError('Incorrect data from API');
                     setActors([]);
                 }
             } catch (error) {
-                setError('Помилка при отриманні даних про популярних акторів');
+                setError('Error fetching data about popular actors');
             } finally {
                 setLoading(false);
             }
@@ -29,18 +29,18 @@ const Famousactors = () => {
     }, []);
 
     if (loading) {
-        return <p>Завантаження...</p>;
+        return <p>Loading...</p>;
     }
 
     if (error) {
-        return <p>Сталася помилка: {error}</p>;
+        return <p>Error: {error}</p>;
     }
 
     return (
         <div className="famousactors-container">
             {actors.map((actor) => (
                 <div key={actor.id} className="famousactors-item">
-                    <img src={`https://image.tmdb.org/t/p/w200/${actor.profile_path}`} alt={`${actor.name} фото`} />
+                    <img src={`https://image.tmdb.org/t/p/w200/${actor.profile_path}`} alt={`${actor.name} photo`} />
                     <div>
                         <h3>{actor.name}</h3>
                     </div>
