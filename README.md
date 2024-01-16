@@ -1,6 +1,6 @@
 # Movie Portal App
 
-![Пример изображения](https://github.com/TheReggie0414/Film-Portal-Module-Project-/blob/main/src/img/192151171.png?raw=true)
+![image](https://github.com/TheReggie0414/Film-Portal-Module-Project-/assets/109174554/9a6f8ad7-483e-4c3a-8bb2-ea424fc8513e)
 
 ## Overview
 
