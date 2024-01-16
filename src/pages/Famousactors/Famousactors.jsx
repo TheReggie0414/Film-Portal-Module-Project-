@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Famousactors.css';
 
-export const Famousactors = () => {
+const Famousactors = () => {
     const [actors, setActors] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchPopularActors = async () => {
@@ -13,25 +15,34 @@ export const Famousactors = () => {
                 if (data.results && Array.isArray(data.results)) {
                     setActors(data.results);
                 } else {
-                    console.error('Некорректные данные от API:', data);
+                    setError('Некоректні дані від API');
                     setActors([]);
                 }
             } catch (error) {
-                console.error('Ошибка при получении данных о популярных актерах:', error);
+                setError('Помилка при отриманні даних про популярних акторів');
+            } finally {
+                setLoading(false);
             }
         };
 
         fetchPopularActors();
     }, []);
 
+    if (loading) {
+        return <p>Завантаження...</p>;
+    }
+
+    if (error) {
+        return <p>Сталася помилка: {error}</p>;
+    }
+
     return (
         <div className="famousactors-container">
             {actors.map((actor) => (
                 <div key={actor.id} className="famousactors-item">
-                    <img src={`https://image.tmdb.org/t/p/w200/${actor.profile_path}`} alt={actor.name} />
+                    <img src={`https://image.tmdb.org/t/p/w200/${actor.profile_path}`} alt={`${actor.name} фото`} />
                     <div>
                         <h3>{actor.name}</h3>
-                        {/* Добавьте другие детали актера, которые вам нужны */}
                     </div>
                 </div>
             ))}
@@ -39,4 +50,4 @@ export const Famousactors = () => {
     );
 };
 
-export default Famousactors;
+export { Famousactors };

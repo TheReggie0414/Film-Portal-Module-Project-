@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './TopFilms.css'
+import './TopFilms.css';
 
 const API_KEY = 'c4b2a80700871dc15f983a106dfb7c71';
 

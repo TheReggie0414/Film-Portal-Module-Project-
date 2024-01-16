@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Moviedetails.css';
 
-export const Avatar = () => {
+const Avatar = () => {
     const [movie, setMovie] = useState(null);
     const [cast, setCast] = useState([]);
     const [trailers, setTrailers] = useState([]);
@@ -44,10 +44,8 @@ export const Avatar = () => {
                 <div className='main-block-div'>
 
                     <div className='movie-block-info'>
-                        {/* Постер фильма */}
-                        <img className="movie-poster" src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt="Poster" />
 
-                        {/* Отображение основной информации о фильме */}
+                        <img className="movie-poster" src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt="Poster" />
                         <div className='movie-block-film-info'>
                             <h1>{movie.title}</h1>
                             <div className="movie-info">
@@ -55,7 +53,6 @@ export const Avatar = () => {
                                 <p className='rating'>Рейтинг: {movie.vote_average}</p>
                             </div>
 
-                            {/* Отображение актерского состава */}
                             <h3 className='h3-cast'>The cast:</h3>
                             <div className="cast-container">
 
@@ -71,7 +68,6 @@ export const Avatar = () => {
                         </div>
                     </div>
 
-                    {/* Отображение кадров из фильма */}
                     <div className="images-container">
                         <h3>Frames from the movie:</h3>
                         <div className="images-list">
@@ -81,7 +77,7 @@ export const Avatar = () => {
                         </div>
 
                     </div>
-                    {/* Отображение трейлеров */}
+
                     <div className="trailers-container">
                         <h3>Трейлеры:</h3>
                         <div className="trailers-list">
@@ -96,4 +92,4 @@ export const Avatar = () => {
     );
 };
 
-export default Avatar;
+export { Avatar };
