@@ -1,6 +1,6 @@
 # Movie Portal App
 
-(![image](https://github.com/cos1715/JS15-React/assets/109174554/891c9fa1-f878-4b81-b7f1-7dae7b8172c7)
+![image]([https://github.com/cos1715/JS15-React/assets/109174554/891c9fa1-f878-4b81-b7f1-7dae7b8172c7](https://github.com/TheReggie0414/Film-Portal-Module-Project-/blob/main/src/img/_91934033.png?raw=true))
 
 ## Overview
 
